@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python - challenges</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px; /* Space between items */
+  padding: 20px;
+}
+.challenge-btn{
+    display: block !important;
+    margin-left: 1.2rem;
+}
+</style>
+<body>
+    <header class="header">
+        <img src="./logo/Logo.png" alt="Logo" class="logo" />
+        <img src="./logo/header.png" alt="Header" class="header-image" />
+    </header>
+    <p style="text-align: center; font-size: 1.7rem; font-weight: bold; margin-bottom: 0;">Additional Activity</p>
+
+    <main>
+        <section id="activity1">
+            <h2>Activity-1: Personal Profile Builder</h2>
+            <p>You have to create a Personal Profile Builder. Sounds complicated? You just have to take the following inputs from the user:</p>
+            <ul>
+                <li>First Name</li>
+                <li>Last Name</li>
+                <li>City</li>
+                <li>Favourite Color</li>
+                <li>Favourite Food</li>
+                <li>Hobbies</li>
+            </ul>
+            <p>Then, you have to print a summary about the user:</p>
+            <p><strong>Example:</strong></p>
+            <p>Hello! My name is Arshi from Mumbai. My favorite color is Blue, I love to eat burgers, and I enjoy Reading.</p>
+
+            <button class="show-answer-btn" id="show-answer-btn1">Show Code</button>
+            <img src="./images/aa1.png" class="answer-img" id="answer-img1" alt="activity" style="max-width: 100%;">
+
+        </section>
+        <section id="activity2">
+            <h2>Activity-2: Personalized Greeting Card</h2>
+            <p>You will be creating a personalized greeting card. Here is what you need to take as input:</p>
+            <ul>
+                <li>Sender’s name</li>
+                <li>Recipient’s name</li>
+                <li>Occasion</li>
+                <li>Message</li>
+            </ul>
+            <p>Then you will be printing the greeting card:</p>
+            <p><strong>Example:</strong></p>
+            <p>Dear Ansh,</p>
+            <p>Wishing you a very happy Diwali! May your life be filled with happiness.</p>
+            <p>Best regards,<br>Aastha</p>
+
+            <button class="show-answer-btn" id="show-answer-btn2">Show Code</button>
+            <img src="./images/aa2.png" class="answer-img" id="answer-img2" alt="activity">
+
+        </section>
+    </main>
+    <button class="goback" onclick="window.location.href='index.html'">Go Back</button>
+
+
+    
+    <script>
+        document.getElementById('show-answer-btn1').addEventListener('click', function() {
+           var img = document.getElementById('answer-img1');
+           if (img.style.display === 'none' || img.style.display === '') {
+               img.style.display = 'block';
+               this.textContent = 'Hide Code';
+           } else {
+               img.style.display = 'none';
+               this.textContent = 'Show Code';
+           }
+       });
+
+       document.getElementById('show-answer-btn2').addEventListener('click', function() {
+           var img = document.getElementById('answer-img2');
+           if (img.style.display === 'none' || img.style.display === '') {
+               img.style.display = 'block';
+               this.textContent = 'Hide Code';
+           } else {
+               img.style.display = 'none';
+               this.textContent = 'Show Code';
+           }
+       });
+   </script>
+</body>
+</html>

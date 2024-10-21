@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Mini-Activities</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <img src="./logo/Logo.png" alt="Logo" class="logo" />
+        <img src="./logo/header.png" alt="Header" class="header-image" />
+      </header>
+
+    <main>
+        <section id="activity1">
+            <h2>Mini-Activity 1</h2>
+            <p>Create a variable to store your name, whether it is raining or not, temperature, and age.</p>
+        </section>
+        <section id="activity2">
+            <h2>Mini-Activity 2</h2>
+            <p> Let’s say you want to print a message without using a variable, how would you do that?</p>
+        </section>
+        <section id="activity3">
+            <h2>Mini-Activity 3</h2>
+            <p>Let’s say you want to print a message and after that whatever is the value inside the variable name.</p>
+        </section>
+        <section id="activity4">
+            <h2>Mini-Activity 4</h2>
+            <p>Now, what if you want to take input of name from the user and then print it on screen any idea how would you do that?</p>
+        </section>
+        <section id="activity5">
+            <h2>Mini-Activity 5</h2>
+            <p>Print variables with different data types together using print.</p>
+           
+            <button class="show-answer-btn" id="show-answer-btn1">Show Code</button>
+            <img src="./images/ma5.png" class="answer-img" id="answer-img1" alt="activity">
+
+        </section>
+    </main>
+    <button class="challenge-btn" onclick="window.location.href='challenges.html'">Challenges</button>
+ 
+    <script>
+         document.getElementById('show-answer-btn1').addEventListener('click', function() {
+            var img = document.getElementById('answer-img1');
+            if (img.style.display === 'none' || img.style.display === '') {
+                img.style.display = 'block';
+                this.textContent = 'Hide Code';
+            } else {
+                img.style.display = 'none';
+                this.textContent = 'Show Code';
+            }
+        });
+    </script>
+</body>
+</html>
